@@ -56,7 +56,8 @@
         android:hint="@string/num_two"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtInput" />
+        app:layout_constraintTop_toBottomOf="@+id/txtInput"
+        android:autofillHints="" />
 
     <Button
         android:id="@+id/btnSuma"

@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">ConstrainLayout</string>
+    <string name="txt_title">Constrain Layout</string>
+    <string name="txt_input">Ingresar números:</string>
+    <string name="num_one">Primer número</string>
+    <string name="num_two">Segundo número</string>
+
+    <string name="btn_suma">Sumar</string>
 </resources>
