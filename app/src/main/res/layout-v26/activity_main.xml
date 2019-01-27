@@ -13,51 +13,50 @@
         android:layout_marginTop="28dp"
         android:text="@string/txt_title"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/inputOne"
-        android:layout_width="129dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginLeft="63dp"
         android:layout_marginTop="32dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginRight="39dp"
+        android:autofillHints=""
         android:ems="10"
         android:hint="@string/num_one"
         android:inputType="number|textPersonName"
         app:layout_constraintEnd_toStartOf="@+id/inputTwo"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtInput"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/txtInput" />
 
     <TextView
         android:id="@+id/txtInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginLeft="60dp"
         android:layout_marginTop="32dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
         android:text="@string/txt_input"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/inputOne"
         app:layout_constraintTop_toBottomOf="@+id/txtTitle" />
 
     <EditText
         android:id="@+id/inputTwo"
-        android:layout_width="148dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
+        android:autofillHints=""
         android:ems="10"
         android:hint="@string/num_two"
         android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/inputOne"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtInput"
-        android:autofillHints="" />
+        app:layout_constraintStart_toEndOf="@+id/inputOne" />
 
     <Button
         android:id="@+id/btnSuma"
@@ -65,10 +64,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
         android:text="@string/btn_suma"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputOne" />
+        app:layout_constraintEnd_toStartOf="@+id/txtResult"
+        app:layout_constraintStart_toStartOf="@+id/txtResult"
+        app:layout_constraintTop_toBottomOf="@+id/inputTwo" />
 
     <TextView
         android:id="@+id/txtResult"
